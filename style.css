@@ -1,0 +1,123 @@
+:root {
+    --bg-component: #3b3d3899;
+    --bg-primary: #3432a8;
+    --bg-to: black;
+}
+
+body {
+    background-image: linear-gradient(to left, var(--bg-primary), var(--bg-to));
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 20px;
+}
+
+a {
+    color: #48addb;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #9af505;
+}
+
+nav {
+    min-height: 45px;
+    border-radius: 8px;
+    padding: 0px 5px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: col;
+    gap: 5px;
+    align-items: center;
+}
+
+#hero {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 30px;
+    gap: 12px;
+}
+
+#hero h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+nav a {
+    text-decoration: none;
+    transition: transform 0.2s ease, margin 0.2s ease;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    margin: 0px 10px;
+}
+
+.info-container {
+    border: solid gray 2px;
+    border-radius: 8px;
+    background: var(--bg-component);
+    padding: 15px;
+    margin: 15px 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    transition: transform 0.5s ease;
+    margin: 2px 0px;
+}
+
+li:hover {
+    transform: translateX(15px);
+
+}
+
+.project-card {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: gray;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0px;
+    transition: outline-width 0.5s ease, outline-color 0.5s ease;
+}
+
+.project-card:hover {
+    outline-width: 2px;
+    outline-color: lightgray;
+}
+
+#contact {
+    text-align: center;
+    padding: 60px 30px;
+    margin: 15px 0px;
+    border-radius: 8px;
+    background: var(--bg-component);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+#contact p {
+    color: darkgray;
+    margin-bottom: 28px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+}
